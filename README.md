@@ -8,9 +8,51 @@ Backend / Platform Engineer • Distributed Systems • Cloud-native Java
 Backend and platform engineer with **4+ years of experience** designing, automating, and operating large-scale systems. My background includes **reliability engineering, CI/CD automation, and backend service development** at enterprise scale (260K+ servers, 99.99% uptime). I focus on building **resilient, observable, and scalable backend systems**.
 
 ---
+### Core Tech Stack (Backend / Platform)
 
-## Core Tech Stack
-Java, Spring Boot, AWS, GCP, Redis, Kafka, PostgreSQL, MySQL, Docker, Kubernetes, Terraform, CI/CD
+<p>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat&logo=springboot&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Terraform-844FBA?style=flat&logo=terraform&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CI%2FCD-000000?style=flat&logo=githubactions&logoColor=white"/>
+</p>
+
+### AI / ML Tech Stack (Supporting)
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat"/>
+  <img src="https://img.shields.io/badge/Neo4j-018BFF?style=flat&logo=neo4j&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black"/>
+</p>
+
+**Algorithms & Methods:**  
+Recommendation systems (Matrix Factorization, LightGCN, NGCF),  
+Applied ML (SVM, Random Forest),  
+**Feature engineering (aggregation, normalization, categorical encoding, temporal features)**,  
+Model evaluation and ranking metrics (NDCG, MAP),  
+LLM system evaluation (hallucination detection, grounding checks).
+
+### Product Skills (Engineering-Led)
+
+Product discovery and problem framing,  
+API-first product design,  
+Requirements translation (PRDs → technical design),  
+System tradeoff analysis (performance, reliability, cost),  
+B2C → B2B product pivots,  
+Vendor and integration-focused workflows,  
+MVP scoping and iterative delivery,  
+User feedback–driven iteration and prioritization.
 
 ---
 
