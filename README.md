@@ -115,5 +115,3 @@ Interested in backend and distributed systems roles involving:
 *Open to SWE roles in backend and distributed systems.*
 
 ---
-
-ctly where you want to land.
