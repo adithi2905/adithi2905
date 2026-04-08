@@ -29,12 +29,12 @@ A wrapper that instruments latency, TTFT (time-to-first-token), cost, and token 
 
 Backend system for evaluating supply chain actions (WAIT, EXPEDITE, SWITCH) using structured inputs such as inventory and disruption risk.
 
-* Built an orchestration layer coordinating modular decision stages across services
-* Deterministic engine computes cost/time tradeoffs under constraints
-* Integrated LLM-based components for scenario evaluation alongside deterministic logic
-* MCP-style tool adapters for operations, supplier data, and decision logging
-* Implemented RBAC using JWT for role-based access
-* Exposes “what-if” simulation endpoints returning quantified outcomes
+* Built a decision system that evaluates supply chain actions (WAIT, EXPEDITE, SWITCH) under disruption scenarios using inventory levels and risk signals
+* Designed a human-in-the-loop what-if simulator that quantifies cost and delay trade-offs (e.g., impact of delaying or expediting by up to 8 days)
+* Implemented a deterministic decision engine modeling cost, shortage, and severity to generate actionable recommendations under constraints
+* Integrated LLM-assisted evaluation alongside deterministic logic to support scenario reasoning without relying solely on probabilistic outputs
+* Developed an orchestration layer coordinating modular decision stages, enabling extensibility across suppliers, logistics, and operational inputs
+* Exposed APIs that return quantified decision outcomes, enabling operators to evaluate trade-offs before execution
 
 ---
 
@@ -45,40 +45,14 @@ Backend system for evaluating supply chain actions (WAIT, EXPEDITE, SWITCH) usin
 
 Spring Boot backend for real-time ride matching and trip lifecycle management.
 
-* Managed distributed ride state under concurrent requests using Redis
-* Resolved race conditions in driver assignment under load
-* Implemented ranking logic (proximity, trust score, emissions) under real-time constraints
-* Coordinated trip lifecycle with consistent state transitions across services
+* Built a distributed ride allocation backend that ranks drivers using a composite score (proximity, trust, CO₂ efficiency), integrating sustainability into real-time matching
+* Designed a closed feedback loop where trip-level CO₂ savings and vehicle fuel type continuously update driver scores, influencing future allocations
+* Resolved race conditions in driver assignment under concurrent requests using Redis-backed coordination, improving reliability from 60% → 95% under load
+* Implemented carbon scoring pipeline using Haversine-based distance estimation to compute per-trip emissions, mapped to normalized scores and cost metrics
+* Developed scheduled scoring system that updates driver trust scores based on vehicle fuel type and historical efficiency, enabling long-term ranking optimization
 
 ---
 
-### **[Credify](https://github.com/adithi2905/unified-kyc-system)**
-
-**Identity verification backend**
-*Tech: Java, Spring Boot, REST APIs, OCR, Hashing*
-
-Backend pipeline for extracting identity data from documents and issuing reusable credentials.
-
-* Extracts structured identity data from documents using OCR
-* Issues credentials reused across verification workflows
-* Eliminates repeated document processing for returning users
-* Introduced hashed audit logs for traceability and tamper detection
-* Handles multi-step verification flows with consistent state transitions
-
----
-
-### **[Graphlix](https://github.com/adithi2905/graphlix)**
-
-**Recommendation API**
-*Tech: Python, Flask, Neo4j, REST APIs*
-
-Backend API for movie recommendations using collaborative filtering and graph-based techniques.
-
-* Improved ranking quality (NDCG@10 from 0.36 → 0.6)
-* Handles cold-start scenarios using embedding-based mapping
-* Supports fuzzy title matching and user-based recommendations
-
----
 
 ## Stack
 
